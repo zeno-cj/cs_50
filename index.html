@@ -1,46 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Search</title>
-		<style>
-			#text{
-			width:500px;
-			margin-left:470px;
-			margin-right:500px;
-			margin-top:15px;
+
+<head>
+	<title>Search</title>
+	<style>
+		#text-bar {
+			width: 500px;
+			margin-left: 470px;
+			margin-right: 500px;
+			margin-top: 15px;
 			border-radius: 25px;
 			padding: 10px;
-		
-			}
-			#submit{
-				margin-left:670px;
-				margin-top:10px;
-				padding:5px;
-				
-			}
-			#lucky{
-				margin-left:800px;
-				margin-top:-100px;
-				padding:5px;
-				
-			
-			}
-			#image{
-				margin-left:600px;
-				margin-top:100px;
-			
-			}
-		</style>
-    </head>
-    <body>
-		<img src="google.png" id="image">
-        <form action="https://google.com/search">
-            <input type="text" name="q" id="text">
-            <input type="submit" value="Google Search" id="submit">
-			
-        </form>
-		<button href="#" id="lucky"> I'm feeling lucky </button>
-		
-		
-    </body>
+			border-style: solid;
+			outline-width: 0;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		.btn-lucky {
+			position: absolute;
+			top: 275px;
+			left: 50%;
+			background-color: white;
+			border-color: white;
+			border-style: none;
+		}
+
+		.btn-lucky:hover {
+			background-color: whitesmoke;
+		}
+
+		input.btn {
+			margin-top: 15px;
+			margin-left: 640px;
+			background-color: white;
+			border-color: white;
+			border-style: none;
+		}
+
+		input.btn:hover {
+			background-color: whitesmoke;
+		}
+
+		#submit {
+			margin-left: 670px;
+			margin-top: 10px;
+			padding: 5px;
+
+		}
+
+		#image {
+			margin-left: 600px;
+			margin-top: 100px;
+
+		}
+	</style>
+</head>
+
+<body>
+	<img src="google.png" id="image">
+
+	<div class="google-form">
+		<form action="https://google.com/search"="off">
+			<input id="text-bar" type="text" name="q"> <br>
+			<input class="btn" type="submit" value="Google Search">
+		</form>
+		<a href="#"><input class="btn-lucky" type="submit" value="I'm Feeling Lucky"></a>
+	</div>
+</body>
+
 </html>
