@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title> Google Image search</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width"/>
+		<style>
+			.image{
+				text-align:center;
+				width: 100%;
+				height: auto;
+				margin-top:10rem;
+				margin-bottom:1rem;
+			
+			}
+			.bar{
+				text-align:center;
+			
+			}
+			#text-bar{
+				width:28%;
+				border-style: solid;
+				outline-width: 0;
+				border-radius: 25px;
+				padding: 10px;
+				margin-bottom:1rem;
+			}
+			.buttondiv{
+				text-align:center;
+				
+				
+			
+			}
+			#button{
+				margin: 0 1em;
+				height: 1.5rem;
+				border-style: solid;
+				background-color: whitesmoke;
+				border-width: 1px;
+				border-color: whitesmoke;
+			
+			}
+			
+		</style>
+	</head>
+	<body>
+		<p align="right">
+			<a href="index.html"><input type="submit" value="Back to google search" /> </a>
+			
+		</p>
+		<div class="image">
+			<img src="google.png">
+		
+		</div>
+		<form action="https://google.com/images">
+			<div class="bar">
+				<input  id="text-bar" type="text" name="q">
+			</div>
+			<div class="buttondiv">
+				<input type="submit" id="button" value="Google Image search"> 
+			</div>
+		</form>
+		
+	</body>
+</html>
